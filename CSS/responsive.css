@@ -76,6 +76,9 @@
     .change-background{
         display: none;
     }
+    .landing{
+        background-image: url(../images/Wallpaper-Owl.jpg);
+    }
 }
 
 @media (max-width: 768px) {
@@ -97,56 +100,57 @@
     }
 }
 @media (max-width: 850px) {
-    .design{
-        height: 110vh;
-    }
-
     .design .image{
-        width: calc(1935px/12);
-        height: calc(3097px/12);
-        left: 60%;
+        display: none;
     }
     .design .text{
         width: 100%;
-        top:40%;
+        top:50%;
         transform: translateY(-50%);
     }
 
 }
-@media (max-width: 450px) {
-    .design .image{
-        width: calc(1935px/12.8);
-        height: calc(3097px/12.8);
-        left: 50%;
-    }
-}
-@media (max-width: 311px) {
-    .design .image{
-        width: calc(1935px/13);
-        height: calc(3097px/13);
-        left: 45%;
-    }
-}
-@media (max-width : 992px){
+
+
+@media (max-width : 1300px){
     .portfolio-content{
         grid-template-columns: repeat(auto-fill, minmax(calc((100% / 3) - 4px), 1fr));
         margin: 0px 15px  0 15px ;
         grid-gap: 2px
     }
 }
-@media (max-width : 830px){
+@media (max-width : 1000px){
     .portfolio-content{
         grid-template-columns: repeat(auto-fill, minmax(calc((100% / 2) - 4px), 1fr));
-        margin: 0px 15px  0 15px ;
+       
         grid-gap: 2px
     }
 }
-@media (max-width : 600px){
+@media (max-width : 660px){
     .portfolio-content{
         grid-template-columns: repeat(auto-fill, minmax(calc((100% / 1) - 4px), 1fr));
         margin: 0px 15px  0 15px ;
         grid-gap: 2px
     }
+    .portfolio-item .Description {
+        height: 28%;
+    }
+}
+@media (max-width : 540px){
+    .portfolio-item .Description {
+        height: 31%;
+    }
+}
+@media (max-width: 450px) {
+    .portfolio-item .Description {
+    height: 36%;
+}
+}
+@media (max-width: 380px){
+.portfolio-item .Description {
+    height: 38%;
+    padding: 10px;
+}
 }
 @media (max-width : 415px) {
     .about .image{
@@ -257,4 +261,70 @@
         order: -2;
         margin-bottom: 50px;
     }    
+}
+@media(max-width: 1217px) and (min-width: 1200px){
+    .progress{
+        margin-left: 0px ;
+    }
+}
+@media(max-width: 1017px) and (min-width: 992px){
+    .progress{
+        margin-left: 0px ;
+    }
+}
+@media(max-width: 800px) and (min-width: 768px){
+    .progress{
+        margin-left: 0px ;
+    }
+}
+
+
+
+
+@media only screen and (min-width: 600px) and (orientation: landscape) and (max-width: 1024px) and (hover: none) and (pointer: coarse) {
+    /* CSS rules for landscape mode on mobile devices with a minimum width of 600px and maximum width of 1024px */
+
+
+    /* CSS rules for landscape mode on devices with a minimum width of 600px */
+    .landing{
+        overflow: hidden;
+    }
+    .landing .over-lay{
+        height: 100%;
+    }
+    .landing .text{
+        width: 100%;
+        justify-content: center;
+        top: 55%;
+    }
+    .landing .content {
+        text-align: center;
+    }
+    .landing .text h2{
+        font-size: 20px;
+        text-align: center;
+    }
+    .landing .text p{
+        font-size: 12px;
+    }
+    .design{
+        height: 80vh;
+    }
+    .design .image{
+        display: none;
+    }
+    .design .text{
+        width: 88%;
+    /* text-align: center; */
+    justify-content: center;
+    padding: 25px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+    .videos .text {
+        padding: 15px;
+    }
+    .capacities {
+        height: 50vh;
+    }
 }
